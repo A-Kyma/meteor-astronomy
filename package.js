@@ -22,7 +22,7 @@ Package.onUse(function(api) {
       "minimongo",
       "ejson",
       "mdg:validation-error@0.5.1",
-	  "ostrio:files"
+	  "ostrio:files@2.3.3"
     ],
     ["client", "server"]
   );
@@ -42,7 +42,7 @@ Package.onTest(function(api) {
       "insecure",
       "mongo",
       "ejson",
-      "akyma:astronomy@2.5.8"
+      "akyma:astronomy@3.0.1"
     ],
     ["client", "server"]
   );
