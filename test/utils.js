@@ -1,5 +1,5 @@
 import _forOwn from 'lodash/forOwn';
-import { Class, Behavior } from 'meteor/jagi:astronomy';
+import { Class, Behavior } from 'meteor/akyma:astronomy';
 
 resetDatabase = function() {
   _forOwn(Class.classes, (Class) => {

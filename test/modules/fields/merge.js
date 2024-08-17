@@ -5,7 +5,7 @@ from 'meteor/practicalmeteor:chai';
 import {
   Class
 }
-from 'meteor/jagi:astronomy';
+from 'meteor/akyma:astronomy';
 
 const NestedItem = Class.create({
   name: 'NestedItem',

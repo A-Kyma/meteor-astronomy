@@ -1,4 +1,4 @@
-import { Class, ValidationError } from 'meteor/jagi:astronomy';
+import { Class, ValidationError } from 'meteor/akyma:astronomy';
 
 Tinytest.add('Modules - Validators - Validate', function(test) {
   const ClassValidator = Class.create({

@@ -1,4 +1,4 @@
-import { Class, Field } from 'meteor/jagi:astronomy';
+import { Class, Field } from 'meteor/akyma:astronomy';
 
 Tinytest.add('Modules - Behaviors - Apply', function(test) {
 	let ClassBehavior1 = Class.create({

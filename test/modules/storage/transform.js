@@ -1,6 +1,6 @@
 import _extend from 'lodash/extend';
 import { Mongo } from 'meteor/mongo';
-import { Class } from 'meteor/jagi:astronomy';
+import { Class } from 'meteor/akyma:astronomy';
 
 Tinytest.add('Modules - Storage - Transform', function(test) {
   const Transforms = new Mongo.Collection(null);

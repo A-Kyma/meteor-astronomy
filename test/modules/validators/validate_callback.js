@@ -1,7 +1,7 @@
 import {
   Class
 }
-from 'meteor/jagi:astronomy';
+from 'meteor/akyma:astronomy';
 
 Tinytest.addAsync(
   'Modules - Validators - ValidateWithCallback', function(test, onComplete) {

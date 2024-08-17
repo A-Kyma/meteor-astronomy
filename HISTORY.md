@@ -1,7 +1,7 @@
 # [2.7.1](/releases/tag/2.7.1) (2019-01-05)
 - Fix #671 by introducing several logging flags:
 ```js
-import { config } from "meteor/jagi:astronomy";
+import { config } from "meteor/akyma:astronomy";
 
 config.logs.deprecation = false; // Turn off deprecation warnings.
 config.logs.nonExistingField = false; // Turn off warnings about non existing fields.
@@ -113,7 +113,7 @@ user.set('phones.0', '123456789', {
 - Union type
 
 ``` js
-import { Class, Union } from 'meteor/jagi:astronomy';
+import { Class, Union } from 'meteor/akyma:astronomy';
 
 const StringOrNumber = Union.create({
   name: 'StringOrNumber',
@@ -225,7 +225,7 @@ const Item = Class.create({
 - Fix a bug causing the `softremove` behavior not to work with version >=2.2.4
 
 # [2.3.0](/releases/tag/2.3.0) (2016-11-08)
-- [Casting values](http://jagi.github.io/meteor-astronomy/v2#casting-values)
+- [Casting values](http://akyma.github.io/meteor-astronomy/v2#casting-values)
 
 ``` js
 user.set({
@@ -234,7 +234,7 @@ user.set({
   cast: true
 });
 ```
-- [Casting values on save](http://jagi.github.io/meteor-astronomy/v2#storing-documents)
+- [Casting values on save](http://akyma.github.io/meteor-astronomy/v2#storing-documents)
 
 ``` js
 const user = new User(userFormData);
@@ -242,7 +242,7 @@ user.save({
   cast: true
 });
 ```
-- [Casting on validation](http://jagi.github.io/meteor-astronomy/v2#validation)
+- [Casting on validation](http://akyma.github.io/meteor-astronomy/v2#validation)
 
 ``` js
 const user = new User(userFormData);
@@ -250,7 +250,7 @@ user.validate({
   cast: true
 });
 ```
-- [Allow merging values on set instead of overriding](http://jagi.github.io/meteor-astronomy/v2#setting-and-getting-values)
+- [Allow merging values on set instead of overriding](http://akyma.github.io/meteor-astronomy/v2#setting-and-getting-values)
 
 ``` js
 const addressData = {
@@ -317,7 +317,7 @@ u.applyMethod('rename', ['John', 'Smith'], (err, result) => {
 });
 ```
 
-You can read more about Meteor methods in [docs](http://jagi.github.io/meteor-astronomy/v2#meteor-methods--220)
+You can read more about Meteor methods in [docs](http://akyma.github.io/meteor-astronomy/v2#meteor-methods--220)
 - `methods` have been renamed to `helpers`. You can still use the `methods` property but it's deprecated and will be removed in the future Astronomy releases.
 
 # [2.1.5](/releases/tag/2.1.5) (2016-10-14)
@@ -377,15 +377,15 @@ NEW FEATURES!
 - Pass validator name to the resolveError method
 
 # [2.0.0](/releases/tag/2.0.0) (2016-05-01)
-[Upgrade guide](http://jagi.github.io/meteor-astronomy/#upgrading-to-20) for v1 users.
+[Upgrade guide](http://akyma.github.io/meteor-astronomy/#upgrading-to-20) for v1 users.
 
 NEW FEATURES!
 - ES2015 compatible
 - Direct collection/class access (support for all MiniMongo modifiers)
 - New events system
-- Improved [events propagation](http://jagi.github.io/meteor-astronomy/#events-propagation) for nested classes
+- Improved [events propagation](http://akyma.github.io/meteor-astronomy/#events-propagation) for nested classes
 - Better error reporting on invalid schema
-- New [modules](http://jagi.github.io/meteor-astronomy/#writing-modules) system
+- New [modules](http://akyma.github.io/meteor-astronomy/#writing-modules) system
 - Automatic document modifications detection. Now you can modify your documents freely without using `set`, `push`, `inc` etc. methods. Astronomy will detect changes to your documents and try to perform minimal query
 - Save and remove methods implemented as Meteor methods. No need to create your own Meteor method to perform operation in both environments (client & server) - just call `doc.save()` or `doc.remove()`
 - Validate document on every save
@@ -394,4 +394,4 @@ NEW FEATURES!
 - New validators system
 - Add multiple behaviors of the same type to the one class
 - Mapping field name to different field name in collection
-- [ENUM](http://jagi.github.io/meteor-astronomy/#enum-type) type
+- [ENUM](http://akyma.github.io/meteor-astronomy/#enum-type) type

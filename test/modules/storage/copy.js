@@ -1,5 +1,5 @@
 import _omit from 'lodash/omit';
-import { Class } from 'meteor/jagi:astronomy';
+import { Class } from 'meteor/akyma:astronomy';
 
 Tinytest.add('Modules - Storage - Copy', function(test) {
   resetDatabase();

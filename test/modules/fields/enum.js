@@ -1,5 +1,5 @@
 import { assert } from 'meteor/practicalmeteor:chai';
-import { Class, Enum } from 'meteor/jagi:astronomy';
+import { Class, Enum } from 'meteor/akyma:astronomy';
 
 const StatusA = Enum.create({
   name: 'StatusA',

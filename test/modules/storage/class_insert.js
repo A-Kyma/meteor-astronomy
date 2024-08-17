@@ -1,4 +1,4 @@
-import { Class } from 'meteor/jagi:astronomy';
+import { Class } from 'meteor/akyma:astronomy';
 
 Tinytest.add('Modules - Storage - Class insert', function(test) {
   const Storage = Class.get('Storage');

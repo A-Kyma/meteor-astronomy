@@ -1,4 +1,4 @@
-import { Class, Field } from 'meteor/jagi:astronomy';
+import { Class, Field } from 'meteor/akyma:astronomy';
 
 Tinytest.add('Core - Extend', function(test) {
   reset();

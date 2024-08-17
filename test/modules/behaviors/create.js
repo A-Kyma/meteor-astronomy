@@ -1,4 +1,4 @@
-import { Behavior } from 'meteor/jagi:astronomy';
+import { Behavior } from 'meteor/akyma:astronomy';
 
 Tinytest.add('Modules - Behaviors - Create', function(test) {
 	reset();

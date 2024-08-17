@@ -1,14 +1,14 @@
 # Astronomy for Meteor
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jagi/meteor-astronomy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/akyma/meteor-astronomy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
 
-<img src="http://jagi.github.io/meteor-astronomy/images/logo.png" />
+<img src="http://akyma.github.io/meteor-astronomy/images/logo.png" />
 
-The [Astronomy](https://atmospherejs.com/jagi/astronomy) package introduces the [Model Layer](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) into Meteor applications. It can also be named the Object Document Mapping system (ODM) or for people coming from relational database environments the Object-Relational Mapping system (ORM). Astronomy extends MongoDB documents with functionalities defined in a schema.
+The [Astronomy](https://atmospherejs.com/akyma/astronomy) package introduces the [Model Layer](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) into Meteor applications. It can also be named the Object Document Mapping system (ODM) or for people coming from relational database environments the Object-Relational Mapping system (ORM). Astronomy extends MongoDB documents with functionalities defined in a schema.
 
 ## Documentation
 
-Astronomy documentation can be found [here](http://jagi.github.io/meteor-astronomy/).
+Astronomy documentation can be found [here](http://akyma.github.io/meteor-astronomy/).
 
 ## Tutorials
 
@@ -17,14 +17,14 @@ You can learn more about Astronomy by watching video tutorials that I'm creating
 ## Installation
 
 ```sh
-$ meteor add jagi:astronomy
+$ meteor add akyma:astronomy
 ```
 
 ## Support Astronomy development
 
-[<img src="https://www.patreon.com/images/patreon_navigation_logo_mini_orange.png" width="100" />](https://www.patreon.com/jagi)
+[<img src="https://www.patreon.com/images/patreon_navigation_logo_mini_orange.png" width="100" />](https://www.patreon.com/akyma)
 
-I've decided to start [Patreon](https://www.patreon.com/jagi) page. If you enjoy using Astronomy and want to support development of future versions, then any donation will be welcome :).
+I've decided to start [Patreon](https://www.patreon.com/akyma) page. If you enjoy using Astronomy and want to support development of future versions, then any donation will be welcome :).
 
 ## Introduction
 
@@ -76,7 +76,7 @@ For clarity, here is a sample schema that allows that. May seem to be a lot of
 code but have in mind that you write it only once.
 
 ```js
-import { Class } from 'meteor/jagi:astronomy';
+import { Class } from 'meteor/akyma:astronomy';
 
 const Posts = new Mongo.Collection('posts');
 const Post = Class.create({
@@ -101,11 +101,11 @@ const Post = Class.create({
 
 ## Supporters
 
-[<img src="http://jagi.github.io/meteor-astronomy/images/usefulio.png" />](http://useful.io/)
+[<img src="http://akyma.github.io/meteor-astronomy/images/usefulio.png" />](http://useful.io/)
 
 ## Contribution
 
-Bigs thanks for all the [contributions](https://github.com/jagi/meteor-astronomy/graphs/contributors) in form of commits and bug reports. Without you it would not be possible to improve Astronomy. Special thanks to:
+Bigs thanks for all the [contributions](https://github.com/akyma/meteor-astronomy/graphs/contributors) in form of commits and bug reports. Without you it would not be possible to improve Astronomy. Special thanks to:
 - [Faberle](https://github.com/Faberle) - for help with Meteor methods feature
 - [Ben305](https://github.com/Ben305) - for several PRs
 - [peterchoo](https://github.com/peterchoo) - for several PRs

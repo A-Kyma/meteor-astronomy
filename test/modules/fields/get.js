@@ -5,7 +5,7 @@ from 'meteor/practicalmeteor:chai';
 import {
   Class
 }
-from 'meteor/jagi:astronomy';
+from 'meteor/akyma:astronomy';
 
 describe('Module', function() {
   describe('Fields', function() {

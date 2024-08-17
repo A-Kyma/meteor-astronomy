@@ -1,7 +1,7 @@
 import {
   Class
 }
-from 'meteor/jagi:astronomy';
+from 'meteor/akyma:astronomy';
 
 Tinytest.add('Modules - Storage - Type field', function(test) {
   const Part = Class.create({

@@ -1,4 +1,4 @@
-import { Class } from 'meteor/jagi:astronomy';
+import { Class } from 'meteor/akyma:astronomy';
 import _contains from 'lodash/contains';
 
 Tinytest.add('Behaviors - Slug', function(test) {

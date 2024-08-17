@@ -1,8 +1,8 @@
 Package.describe({
-  name: "jagi:astronomy",
-  version: "2.7.3",
-  summary: "Model layer for Meteor",
-  git: "https://github.com/jagi/meteor-astronomy.git"
+  name: "akyma:astronomy",
+  version: "3.0.1",
+  summary: "Model layer for Meteor v3",
+  git: "https://github.com/akyma/meteor-astronomy.git"
 });
 
 Npm.depends({
@@ -10,7 +10,7 @@ Npm.depends({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom(["1.3", "2.13"]);
+  api.versionsFrom(["1.3", "2.13", "3.0"]);
 
   api.use(
     [
@@ -42,7 +42,7 @@ Package.onTest(function(api) {
       "insecure",
       "mongo",
       "ejson",
-      "jagi:astronomy@2.5.8"
+      "akyma:astronomy@2.5.8"
     ],
     ["client", "server"]
   );
