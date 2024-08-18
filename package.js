@@ -1,6 +1,6 @@
 Package.describe({
   name: "akyma:astronomy",
-  version: "3.0.1",
+  version: "3.0.2",
   summary: "Model layer for Meteor v3",
   git: "https://github.com/akyma/meteor-astronomy.git"
 });
@@ -10,19 +10,19 @@ Npm.depends({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom(["1.3", "2.13", "3.0"]);
+  api.versionsFrom(["2.16", "3.0"]);
 
   api.use(
     [
       "ecmascript",
       "es5-shim",
       "ddp",
-      "mongo",
+      "mongo@1.6.10 || 2.0.0",
       "check",
       "minimongo",
       "ejson",
       "mdg:validation-error@0.5.1",
-	  "ostrio:files@2.3.3"
+	  "ostrio:files@3.0.0-beta.4"
     ],
     ["client", "server"]
   );
