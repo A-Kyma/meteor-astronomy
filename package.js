@@ -1,6 +1,6 @@
 Package.describe({
   name: "akyma:astronomy",
-  version: "3.0.2",
+  version: "3.0.3",
   summary: "Model layer for Meteor v3",
   git: "https://github.com/akyma/meteor-astronomy.git"
 });
@@ -10,19 +10,19 @@ Npm.depends({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom(["2.16", "3.0"]);
+  api.versionsFrom("3.3");
 
   api.use(
     [
       "ecmascript",
       "es5-shim",
       "ddp",
-      "mongo@1.6.10 || 2.0.0",
+      "mongo",
       "check",
       "minimongo",
       "ejson",
       "mdg:validation-error@0.5.1",
-	  "ostrio:files@3.0.0-beta.4"
+	  "ostrio:files@3.0.1"
     ],
     ["client", "server"]
   );
@@ -35,14 +35,13 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use(
     [
-      "practicalmeteor:mocha",
-      "tinytest",
+      "meteortesting:mocha@3.2.0",
       "ecmascript",
       "es5-shim",
       "insecure",
       "mongo",
       "ejson",
-      "akyma:astronomy@3.0.1"
+      "akyma:astronomy"
     ],
     ["client", "server"]
   );
